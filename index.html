@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              garamond: ["'EB Garamond', serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Uber</title>
+  </head>
+  <body>
+    <div class="h-screen">
+      <div class="h-[10vh] w-full bg-black text-white">
+        <div
+          class="container mx-auto h-full w-full flex justify-between items-center"
+        >
+          <div class="flex gap-6 items-center">
+            <div class="font-garamond text-3xl">Uber</div>
+            <div
+              class="flex gap-3 cursor-pointer ease-in transition duration-150 hover:bg-zinc-900 py-2 px-2 justify-center items-center rounded-full"
+            >
+              Company
+            </div>
+            <div
+              class="flex gap-3 cursor-pointer ease-in transition duration-150 hover:bg-zinc-900 py-2 px-2 justify-center items-center rounded-full"
+            >
+              Safety
+            </div>
+            <div
+              class="flex gap-3 cursor-pointer ease-in transition duration-150 hover:bg-zinc-900 py-2 px-2 justify-center items-center rounded-full"
+            >
+              Help
+            </div>
+          </div>
+          <div class="flex gap-6 items-center">
+            <div
+              class="flex gap-3 cursor-pointer ease-in transition duration-150 hover:bg-zinc-900 py-2 px-2 justify-center items-center rounded-full"
+            >
+              <i class="fas fa-th"></i>
+              <div>Products</div>
+            </div>
+            <div
+              class="flex gap-3 cursor-pointer ease-in transition duration-150 hover:bg-zinc-900 py-2 px-2 justify-center items-center rounded-full"
+            >
+              Login
+            </div>
+            <div
+              class="text-sm flex gap-3 cursor-pointer ease-in transition duration-150 bg-white text-black hover:bg-neutral-200 py-2 px-2 justify-center items-center rounded-full"
+            >
+              Sign up
+            </div>
+          </div>
+        </div>
+        <div class="h-[90vh] relative bg-[url('/assets/bg.webp')] bg-cover">
+          <div class="absolute h-full w-full top-0">
+            <div class="flex h-full w-full container mx-auto">
+              <div class="w-[60%] h-full flex items-center">
+                <div
+                  class="bg-white flex flex-col h-[500px] border-b rounded w-[80%]"
+                >
+                  <div class="flex w-full pt-3 border justify-between">
+                    <div
+                      class="flex flex-col w-[50%] text-black gap-1 items-center cursor-pointer"
+                    >
+                      <i class="fas fa-signal text-lg"></i>
+                      <div class="font-medium text-center hover:text-zinc-600">
+                        Drive or <br />
+                        Deliver
+                      </div>
+                      <div class="h-[4px] w-[100px] bg-black mt-1.5"></div>
+                    </div>
+
+                    <div
+                      class="flex flex-col w-[50%] text-black gap-4 items-center cursor-pointer"
+                    >
+                      <i class="fas fa-utensils text-xl"></i>
+                      <div class="font-medium hover:text-zinc-600">Eat</div>
+                    </div>
+
+                    <div
+                      class="flex flex-col gap-4 w-[50%] text-black items-center cursor-pointer"
+                    >
+                      <i class="fas fa-car text-xl"></i>
+                      <div class="font-medium hover:text-zinc-600">Ride</div>
+                    </div>
+                  </div>
+                  <div class="px-12 pt-8">
+                    <div class="text-5xl font-bold text-black flex flex-col">
+                      Get in the driver’s
+                      <div class="pt-2">seat and get paid</div>
+                    </div>
+                    <div class="font-light text-lg pt-6 text-black">
+                      Drive on the platform with the largest network of active
+                      riders.
+                    </div>
+                    <button
+                      class="mt-4 font-semibold text-lg bg-black px-4 py-3 rounded-md text-white"
+                    >
+                      Signup to drive
+                    </button>
+                    <div
+                      class="text-black font-light mt-4 text-lg underline underline-offset-8 decoration-zinc-600 cursor-pointer transition ease-in duration-150"
+                    >
+                      Learn more about driving and delivering
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="h-[250px] w-full border bg-[url('/assets/someplace.webp')] bg-cover bg-[center_60%]"
+    >
+      <div
+        class="h-full w-full container mx-auto py-10 flex flex-col justify-between px-8"
+      >
+        <div class="text-3xl text-black font-semibold">Uber for Business</div>
+        <div class="text-black font-light mt-2">
+          Transform the way your company moves and feeds its people.
+        </div>
+        <button
+          class="mt-4 w-[100px] font-semibold bg-black py-3 rounded-md text-white"
+        >
+          See How
+        </button>
+      </div>
+    </div>
+    <div class="h-[350px] w-full bg-black">
+      <div class="w-full h-full px-8 container mx-auto">
+        <div class="flex h-full items-center justify-center">
+          <div class="w-[50%] py-14">
+            <div class="text-white font-semibold text-3xl">
+              Save up to 20% with UberX <br />
+              Share
+            </div>
+            <div class="text-justify text-lg font-light text-white mt-4">
+              With UberX Share, get everything you love about UberX for a more
+              affordable price. Save up to 20% when matched with a rider along
+              your route. Terms apply. Currently available in certain US cities.
+            </div>
+            <button
+              class="mt-4 w-[250px] font-semibold bg-white py-3 rounded-md text-black"
+            >
+              Learn about UberX Share
+            </button>
+          </div>
+          <div class="w-[50%] h-full flex justify-center items-center py-4">
+            <div
+              class="w-[90%] h-full bg-[url('/assets/il1.webp')] bg-bottom"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full">
+      <div class="w-full h-full py-8 px-8 container mx-auto">
+        <div class="text-3xl font-semibold pb-8">
+          Focused on safety, wherever you go
+        </div>
+
+        <div class="flex w-full gap-4">
+          <div class="w-[50%]">
+            <div
+              class="h-[400px] bg-[url('https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_558,h_372/v1613520218/assets/3e/e98625-31e6-4536-8646-976a1ee3f210/original/Safety_Home_Img2x.png')] bg-cover"
+            ></div>
+            <div class="mt-2 font-medium text-lg">
+              Our commitment to your safety
+            </div>
+            <div class="text-black mt-2 font-light text-justify">
+              With every safety feature and every standard in our Community
+              Guidelines, we're committed to helping to create a safe
+              environment for our users.
+            </div>
+            <div class="w-full flex gap-4 mt-4">
+              <div class="underline underline-offset-8 cursor-pointer">
+                Read about our Community Guidelines
+              </div>
+              <div class="underline underline-offset-8 cursor-pointer">
+                See all safety features
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[50%]">
+            <div
+              class="h-[400px] bg-[url('https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_558,h_372/v1613520285/assets/c2/91ea9c-90d7-4c36-a740-d7844536694e/original/Cities_Home_Img2x.png')] bg-cover"
+            ></div>
+            <div class="mt-2 font-medium text-lg">
+              Setting 10,000+ cities in motion
+            </div>
+            <div class="text-black font-light text-justify mt-2">
+              The app is available in thousands of cities worldwide, so you can
+              request a ride even when you’re far from home.
+            </div>
+            <div class="underline underline-offset-8 mt-4 cursor-pointer">
+              View all cities
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container mx-auto gap-4 px-8 w-full flex justify-between my-14 py-4"
+    >
+      <div class="h-full w-[50%] flex-col">
+        <i class="fas fa-users text-3xl"></i>
+        <div class="text-lg font-medium mt-2">About Us</div>
+        <div class="text-lg font-light">
+          Find out how we started, what drives us, and how we’re reimagining how
+          the world moves.
+        </div>
+        <div class="underline underline-offset-8 cursor-pointer mt-4">
+          Read about our Community Guidelines
+        </div>
+      </div>
+      <div class="h-full w-[50%] flex-col justify-center items-center">
+        <i class="fas fa-newspaper text-3xl"></i>
+        <div class="text-lg font-medium mt-2">Newsroom</div>
+        <div class="text-lg font-light">
+          See announcements about our latest releases, initiatives, and
+          partnerships.
+        </div>
+        <div class="underline underline-offset-8 cursor-pointer mt-4">
+          Go to Newsroom
+        </div>
+      </div>
+      <div class="h-full w-[50%] flex-col justify-center items-center">
+        <i class="fas fa-home text-3xl"></i>
+        <div class="text-lg font-medium mt-2">Global citizenship</div>
+        <div class="text-lg font-light">
+          Read about our commitment to making a positive impact in the cities we
+          serve.
+        </div>
+        <div class="underline underline-offset-8 cursor-pointer mt-4">
+          See our partnerships
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#f6f6f6] h-[400px] w-full">
+      <div class="h-full w-full container mx-auto py-8 px-8">
+        <div class="py-8 text-3xl text-black font-semibold">
+          There’s more to love in the apps
+        </div>
+        <div class="h-full gap-6 flex">
+          <div class="w-[50%] h-[200px] border bg-white py-4 px-8 flex">
+            <div
+              class="w-[40%] h-full border bg-[url('/assets/riderlogo.webp')] bg-cover bg-center"
+            ></div>
+            <div
+              class="flex ml-8 w-[60%] justify-around items-center font-semibold text-xl"
+            >
+              <div class="cursor-pointer">Download the Dirver app</div>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="w-[50%] h-[200px] border bg-white py-4 px-8 flex">
+            <div
+              class="w-[40%] h-full border bg-[url('/assets/riderlogo.webp')] bg-cover bg-center"
+            ></div>
+            <div
+              class="flex w-[60%] ml-8 justify-around items-center font-semibold text-xl"
+            >
+              <div class="cursor-pointer">Download the Uber app</div>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white w-full border border-y">
+      <div class="h-full w-full container mx-auto py-8 px-8">
+        <div class="h-full gap-6 flex">
+          <div
+            class="w-[50%] h-[150px] bg-white py-4 px-8 flex flex-col justify-center items-center"
+          >
+            <div
+              class="w-full flex justify-between items-center font-semibold gap-4 text-xl cursor-pointer"
+            >
+              <div class="cursor-pointer text-3xl">Sign up to drive</div>
+              <i class="fas fa-arrow-right text-2xl"></i>
+            </div>
+            <div class="h-[1px] bg-black w-full mt-4"></div>
+          </div>
+          <div
+            class="w-[50%] h-[150px] bg-white py-4 px-8 flex flex-col justify-center items-center"
+          >
+            <div
+              class="w-full flex justify-between items-center font-semibold gap-4 text-xl cursor-pointer"
+            >
+              <div class="cursor-pointer text-3xl">Sign up to ride</div>
+              <i class="fas fa-arrow-right text-2xl"></i>
+            </div>
+            <div class="h-[1px] bg-black w-full mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black w-full">
+      <div class="container mx-auto h-full w-full py-8 px-8">
+        <div class="flex justify-between">
+          <div class="text-2xl font-garamond text-white">Uber</div>
+          <div class="w-[40%] flex flex-col items-end gap-2">
+            <div class="font-light text-white">
+              Do not sell or share my personal information
+            </div>
+            <div class="font-light text-white">Google Data Policy</div>
+          </div>
+        </div>
+        <div
+          class="py-8 text-white text-lg cursor-pointer hover:underline hover:underline-offset-[30px]"
+        >
+          Visit Help Center
+        </div>
+        <div class="mt-14 w-full">
+          <div class="w-[80%] flex justify-between">
+            <div class="flex flex-col gap-4">
+              <div class="text-lg font-semibold text-white">Company</div>
+              <div class="font-light text-white">About Us</div>
+              <div class="font-light text-white">Our Offerings</div>
+              <div class="font-light text-white">Newsroom</div>
+              <div class="font-light text-white">Investors</div>
+              <div class="font-light text-white">Blog</div>
+              <div class="font-light text-white">Carrers</div>
+              <div class="font-light text-white">Ai</div>
+              <div class="font-light text-white">Gift Cards</div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div class="text-lg font-semibold text-white">Products</div>
+              <div class="font-light text-white">Ride</div>
+              <div class="font-light text-white">Drive</div>
+              <div class="font-light text-white">Deliver</div>
+              <div class="font-light text-white">Eat</div>
+              <div class="font-light text-white">Uber for Business</div>
+              <div class="font-light text-white">Uber Freight</div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div class="text-lg font-semibold text-white">
+                Global Citizenship
+              </div>
+              <div class="font-light text-white">Safety</div>
+              <div class="font-light text-white">Diversity and Inclusion</div>
+              <div class="font-light text-white">Sustainability</div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div class="text-lg font-semibold text-white">Travel</div>
+              <div class="font-light text-white">Airports</div>
+              <div class="font-light text-white">Cities</div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 w-full flex items-center">
+          <div class="w-[50%]">
+            <div class="w-[90%] flex justify-between items-center">
+              <button
+                class="flex gap-3 cursor-pointer ease-in transition duration-150 text-white hover:bg-zinc-900 py-2 px-2 justify-center items-center rounded"
+              >
+                <i class="text-white fab fa-facebook-square"></i>
+              </button>
+              <button
+                class="flex gap-3 cursor-pointer ease-in transition duration-150 text-white hover:bg-zinc-900 py-2 px-2 justify-center items-center rounded"
+              >
+                <i class="text-white fab fa-twitter-square"></i>
+              </button>
+              <button
+                class="flex gap-3 cursor-pointer ease-in transition duration-150 text-white hover:bg-zinc-900 py-2 px-2 justify-center items-center rounded"
+              >
+                <i class="text-white fab fa-youtube"></i>
+              </button>
+              <button
+                class="flex gap-3 cursor-pointer ease-in transition duration-150 text-white hover:bg-zinc-900 py-2 px-2 justify-center items-center rounded"
+              >
+                <i class="text-white fab fa-linkedin"></i>
+              </button>
+              <button
+                class="flex gap-3 cursor-pointer ease-in transition duration-150 text-white hover:bg-zinc-900 py-2 px-2 justify-center items-center rounded"
+              >
+                <i class="text-white fab fa-instagram"></i>
+              </button>
+            </div>
+          </div>
+          <div class="w-[50%] justify-end flex gap-2">
+            <button
+              class="flex gap-3 cursor-pointer ease-in transition duration-150 text-white hover:bg-zinc-900 py-2 px-2 justify-center items-center rounded"
+            >
+              <i class="fas fa-globe-americas"></i>
+              <div>English (International)</div>
+            </button>
+            <button
+              class="flex gap-3 cursor-pointer ease-in transition duration-150 text-white hover:bg-zinc-900 py-2 px-2 justify-center items-center rounded"
+            >
+              <i class="fas fa-map-marker-alt"></i>
+              <div>San Francisco Bay Area</div>
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <img
+            src="/assets/googleplay.svg"
+            class="h-[150px] w-[150px] cursor-pointer"
+          />
+          <img
+            src="/assets/app-store.svg"
+            class="h-[150px] w-[150px] cursor-pointer"
+          />
+        </div>
+        <div class="flex justify-between items-center">
+          <div class="text-sm text-zinc-500 cursor-pointer">
+            © 2023 Uber Technologies Inc.
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="text-zinc-500 cursor-pointer text-sm">Privacy</div>
+            <div class="text-zinc-500 cursor-pointer text-sm">
+              Accessibility
+            </div>
+            <div class="text-zinc-500 cursor-pointer text-sm">Terms</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
